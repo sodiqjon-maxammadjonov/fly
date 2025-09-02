@@ -1,4 +1,4 @@
-package com.sdk.fly.ui.theme
+package com.sdk.fly.presentation.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -8,6 +8,7 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
@@ -106,20 +107,20 @@ fun MyTheme(
 }
 
 
-val MaterialTheme.successColor: androidx.compose.ui.graphics.Color
+val MaterialTheme.successColor: Color
     @Composable get() = SuccessGreen
 
-val MaterialTheme.warningColor: androidx.compose.ui.graphics.Color
+val MaterialTheme.warningColor: Color
     @Composable get() = WarningOrange
 
-val MaterialTheme.infoColor: androidx.compose.ui.graphics.Color
+val MaterialTheme.infoColor: Color
     @Composable get() = InfoBlue
 
-val MaterialTheme.onlineColor: androidx.compose.ui.graphics.Color
+val MaterialTheme.onlineColor: Color
     @Composable get() = OnlineGreen
 
-val MaterialTheme.pendingColor: androidx.compose.ui.graphics.Color
+val MaterialTheme.pendingColor: Color
     @Composable get() = PendingYellow
 
-val MaterialTheme.loadingColor: androidx.compose.ui.graphics.Color
+val MaterialTheme.loadingColor: Color
     @Composable get() = LoadingBlue

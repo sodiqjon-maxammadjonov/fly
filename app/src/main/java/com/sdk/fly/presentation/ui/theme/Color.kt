@@ -1,4 +1,4 @@
-package com.sdk.fly.ui.theme
+package com.sdk.fly.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

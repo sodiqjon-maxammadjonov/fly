@@ -14,7 +14,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
-import com.sdk.fly.ui.theme.MyTheme
+import com.sdk.fly.presentation.ui.screens.VoiceScreen
+import com.sdk.fly.presentation.ui.theme.MyTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,9 +30,7 @@ class MainActivity : ComponentActivity() {
                         .consumeWindowInsets(WindowInsets.safeDrawing),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Text(
-                        "HelloWorld"
-                    )
+                    VoiceScreen()
                 }
 
             }
