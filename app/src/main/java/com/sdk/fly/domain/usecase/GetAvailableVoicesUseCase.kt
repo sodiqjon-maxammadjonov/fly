@@ -4,7 +4,7 @@ import com.sdk.fly.domain.models.Language
 import com.sdk.fly.domain.models.Voice
 import com.sdk.fly.domain.repository.VoiceRepository
 
-class GetAvailableVoicesUseCase(
+class GetAvailableVoices (
     private val repository: VoiceRepository
 ) {
     suspend operator fun invoke(language: Language): List<Voice> {

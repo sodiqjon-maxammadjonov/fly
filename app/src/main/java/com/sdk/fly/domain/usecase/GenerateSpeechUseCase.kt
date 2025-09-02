@@ -4,7 +4,7 @@ import com.sdk.fly.domain.models.AudioData
 import com.sdk.fly.domain.models.Language
 import com.sdk.fly.domain.repository.VoiceRepository
 
-class GenerateSpeechUseCase (
+class GenerateSpeech (
     private val repository: VoiceRepository
 ) {
     suspend operator fun invoke(text: String,voiceId: String,language: Language): AudioData{
