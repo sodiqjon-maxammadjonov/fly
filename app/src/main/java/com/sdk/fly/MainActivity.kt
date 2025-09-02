@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import com.sdk.fly.ui.theme.MyTheme
 
@@ -28,7 +29,9 @@ class MainActivity : ComponentActivity() {
                         .consumeWindowInsets(WindowInsets.safeDrawing),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
+                    Text(
+                        "HelloWorld"
+                    )
                 }
 
             }
